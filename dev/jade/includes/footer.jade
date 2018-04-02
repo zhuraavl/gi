@@ -1,0 +1,25 @@
+footer#footer
+  .container
+    .row
+      .col-sm-6
+        h4 Contact
+        br
+        h5 Gadzhi Shakhshaev
+        h5 info@gidiinvest.com
+        h5 +41 (0)79 534 19 36
+        br
+        h5 gidiinvest.com
+      .col-sm-6
+        form
+          h4 
+            |Message
+            span.done sended ✔
+          input(type='hidden', name='project_name', value='GIDI Invest')
+          input(type='hidden', name='admin_email', value='info@gidiinvest.com')
+          input(type='hidden', name='form_subject', value='Contact form GIDI Invest')
+
+          input.contact(type="text", placeholder="how to contact you (email or phone)", name="contact", required="")
+          textarea.message(name="message", placeholder="Write a message", required="")
+
+          input.send(type="submit" value="Send")
+    

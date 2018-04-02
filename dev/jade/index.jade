@@ -1,0 +1,72 @@
+doctype html
+html(lang='en')
+  head
+  
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title GIDI Invest
+    meta(name='description', content='GIDI INVEST AG is a company founded in 2016. It aims to invest in interesting projects in various fields.')
+    meta(name='keywords', content='GIDIINVEST, gidi invest, invest, Commune de Maxilly sur Leman, Departement de la Haute Savoie, BK-17 Biocorrector, BK-16 Biocorrector, Energy-saving electric power generator')
+    meta(name='author', content='Andrey K.')
+    link(rel='shortcut icon', href='favicon.ico')
+    link(rel='stylesheet', href='css/main.css')
+    script.
+      document.documentElement.className = 'js';
+  body
+    
+    include includes/header
+    main
+      section.hero
+        .container
+          .row
+            .col-md-6.hero-text
+              .anim-box 
+                h2 GIDI INVEST AG is a company founded in 2016. It aims to invest in interesting projects in various fields.
+                h5 Today, the company takes an active part in the development of three areas of investment programs.
+              .left-side
+                .side.one(style="background-image: url(2/e9.jpg)")
+                .side.two(style="background-image: url(3/6.jpg)")
+                .side.three(style="background-image: url(3/hero-pic-estate-2.jpg)")
+                .side.four(style="background-image: url(3/bk171.jpg)")
+                .side.five(style="background-image: url(2/b1.jpg)")
+            .col-md-6.row-link
+              .invest-item
+                h5
+                  |Investments in energy saving technologies
+                a.show-one(href="energy-saving-electric-power-generator.html") Energy-saving electric power generator
+
+                //p Biomedicine is one of the areas that GIDI INVEST AG is engaged in. We have created two types of bio-correctors (portable and stationary) that operate on electrical impulses which provide a positive effect on the human body by eliminating the negative environmental impact, and by stimulating and energizing human cells.
+
+
+              .invest-item
+                h5 
+                  |Investments in real estate (construction)
+                a.show-two(href="commune-de-maxilly-sur-leman.html") Commune de Maxilly sur Leman
+                a.show-three(href="departement-de-la-haute-savoie.html") 
+                  |Departement de la Haute — Savoie
+
+                //p The company has two real estate projects in the city of Maxilly-sur-Leman (France), a residential complex with 10 apartments overlooking the lake of Lac Leman.
+                //p An industrial complex has apartments on the top floor, which makes this project so special. It is located in the city of Maxilly-sur-Leman too, that is a five-minute drive from the resort town of Evian, famous for its springs.
+              //.col-md-1
+                h5
+                  img.icon(src="media/images/icon/6.svg", alt="")
+              .invest-item
+                h5
+
+                  |Investments 
+                  |in biomedicine
+                a.show-four(href="biocorrector-17.html") BK-17 Biocorrector
+                a.show-five(href="biocorrector-16.html") BK-16 Biocorrector  
+                //p Also, GIDI INVEST AG has been developing an energy-saving generator. At the moment, there is already a unique technology and a working prototype. The results of the further research are to be published and tested by the independent experts and research institutes. It is already fair to say that our technology will give the world a new source of electricity and will reduce the negative impact on the biosphere of the Earth.
+                
+              
+            
+      include includes/footer
+          
+    
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+    script(src="js/scripts.js")
+    
+    
+  
