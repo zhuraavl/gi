@@ -16,32 +16,33 @@ html(lang='en')
   body
     include includes/header
     main
-      
-      section.hero-title
-        .container
+      section.fake-hero
+        .hero-bg
+        .bg-two(style="background:#6d9c40")
+      section.new-hero
+        .hero-bg
+        .container.text-center
           .row
-            .col-md-12
-              h1 Biocorrector BK-16
-            .col-md-6
-              img(src="3/logo-green.png", alt="", style="width:150px; margin-top:30px")
-            .col-md-6
+            .col-md-2
+            .col-md-8
+              h6 Investments in biomedicine
+              h1.serif Biocorrector BK-16
+            .col-md-3
+            .col-md-6.col-sm-6.col-xs-12
               h5 Biomedicine is one of the areas that GIDI INVEST AG is engaged in. We have created two types of bio-correctors (portable and stationary) that operate on electrical impulses which provide a positive effect on the human body by eliminating the negative environmental impact, and by stimulating and energizing human cells.
+              img(src="3/logo-green.png", alt="", style="width:150px;")
       
       
-      section.move-hero
-        #move-pic
-          #move_move(style='transform: translateX(-271px);')
-            img(src='2/b1.jpg')
-            img(src='2/b5.jpg')
-            img(src='2/b3.jpg')
-            img(src='2/b4.jpg')
-            img(src='2/b2.jpg')
-
+      
 
       
       
       section.content
         .container
+          .row
+            .col-md-12
+              .img-box
+                img(src="3/bk171.jpg", alt="") 
           .row
             .col-md-6
               ul.part-list
@@ -155,7 +156,13 @@ html(lang='en')
               p The biological program is restored and the body as a whole system begins to get well.	
               
 
-
+      section.next-project
+        .pic(style="background-image: url(2/e7.jpg)")
+        .container
+          .row
+            .col-md-6.col-xs-12
+              p Next project →
+              a(href="energy-saving-electric-power-generator.html") Energy-saving electric power generator
       
       include includes/footer
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")

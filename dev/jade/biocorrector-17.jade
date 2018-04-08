@@ -16,24 +16,36 @@ html(lang='en')
   body
     include includes/header
     main
-      
-      section.hero-title(style="padding-bottom:0;")
-        .container
+      section.fake-hero
+        .hero-bg
+        .bg-two(style="background:#6d9c40")
+      section.new-hero
+        .hero-bg
+        .container.text-center
           .row
-            .col-md-12
-              h1 Biocorrector BK-17
-            .col-md-6
-              img(src="3/logo-green.png", alt="", style="width:150px; margin-top:30px")
-            .col-md-6
+            .col-md-2
+            .col-md-8
+              h6 Investments in biomedicine
+              h1.serif Biocorrector BK-17
+            .col-md-3
+            .col-md-6.col-sm-6.col-xs-12
               h5 Biomedicine is one of the areas that GIDI INVEST AG is engaged in. We have created two types of bio-correctors (portable and stationary) that operate on electrical impulses which provide a positive effect on the human body by eliminating the negative environmental impact, and by stimulating and energizing human cells.
+              img(src="3/logo-green.png", alt="", style="width:150px;")
+      
+      section.move-hero
+        #move-pic
+          #move_move(style='transform: translateX(-271px);')
+            img(src='2/b1.jpg')
+            img(src='2/b5.jpg')
+            img(src='2/b3.jpg')
+            img(src='2/b4.jpg')
+            img(src='2/b2.jpg')
+
       
       section.content(style="padding-top:0;")
         .container
-          .row
-            .col-md-12
-              .img-box
-                img(src="3/bk171.jpg", alt="")  
-              
+           
+          .row  
             .col-md-6
               ul.part-list
                 li
@@ -100,7 +112,13 @@ html(lang='en')
               p A charger is included in the biocorrector's kit. Charging time of internal battery is from 5 to 7 hours. Battery life time is from 3 to 5 days. The level of battery is showed during the process of using biocorrector.
               p When the battery is discharged, the green LED light should go out and do not respond on turning on and off the device. After charging the battery, the LED light will again turn into green.
 
-
+      section.next-project(style="background-color: #8f7a6b; color: #fff;")
+        .pic(style="background-image: url(3/bk171.jpg)")
+        .container
+          .row
+            .col-md-6.col-xs-12
+              p Next project →
+              a(href="biocorrector-16.html" style="color: #fff;") BK-16 Biocorrector  
       
       include includes/footer
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")

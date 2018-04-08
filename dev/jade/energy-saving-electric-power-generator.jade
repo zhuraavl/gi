@@ -18,9 +18,27 @@ html(lang='en')
     include includes/header
     
     main
-      section.hero-picture
-        .pic(style="background-image: url(2/e1.jpg)")
-        .hover-slider
+      section.fake-hero
+        .hero-bg
+        .bg-two(style="background:#6d9c40")
+      section.new-hero
+        .hero-bg
+        .container.text-center
+          .row
+            .col-md-2
+            .col-md-8
+              h6 Investments in energy saving technologies
+              h1.serif Energy-saving electric power generator
+            .col-md-3
+            .col-md-6.col-sm-6.col-xs-12
+              h5 GIDI INVEST AG has been developing an energy-saving generator. At the moment, there is already a unique technology and a working prototype.
+              img(src="3/logo-green.png", alt="", style="width:150px;")
+              //p The results of the further research are to be published and tested by the independent experts and research institutes.
+              //p It is already fair to say that our technology will give the world a new source of electricity and will reduce the negative impact on the biosphere of the Earth.
+      
+      section.hero-picture.electro-page
+        .pic(style="background-image: url(2/e7.jpg)")
+        //.hover-slider
           .item
             .pic(style="background-image: url(2/e1.jpg)")
           .item
@@ -29,44 +47,34 @@ html(lang='en')
             .pic(style="background-image: url(2/e3.jpg)")
           .item
             .pic(style="background-image: url(2/e4.jpg)")
-      section.hero-title(style="padding-bottom:0")
-        .container
-          .row
-            .col-md-12
-              h1 Energy-saving electric power generator
-            .col-md-6
-              img(src="3/logo-green.png", alt="", style="width:150px; margin-top:30px")
-            .col-md-6
-              h5 GIDI INVEST AG has been developing an energy-saving generator. At the moment, there is already a unique technology and a working prototype.
-              p The results of the further research are to be published and tested by the independent experts and research institutes.
-              p It is already fair to say that our technology will give the world a new source of electricity and will reduce the negative impact on the biosphere of the Earth.
+      
 
-      section.content(style="padding-top:0")
+      section.content
         .container
           .row
             .col-md-6
-              ul.part-list
+              ul.part-list.scrollspy
                 li
-                  a(href="") About
+                  a(href="#about") About
                 li
-                  a(href="") Technical features
+                  a(href="#technical") Technical features
                 li
-                  a(href="") Work description
+                  a(href="#work") Work description
                 li
-                  a(href="") Safety
+                  a(href="#safety") Safety
                 li
-                  a(href="") Advantage
+                  a(href="#advantage") Advantage
                 li
-                  a(href="") Applications
+                  a(href="#applications") Applications
                 li
-                  a(href="") Description of patents
+                  a(href="#patents") Description of patents
                   
                   
                   
             .col-md-6
-              h4 About
+              h4#about About
               h5  Energy-saving electric power generator refers to electronic generators of pulsed and alternating voltage. The purpose of the device is the conversion and accumulation of electrical energy, for the further transmission of this electrical energy to electric consumers.
-              h4 Main technical features
+              h4#technical Main technical features
               table
                 tr
                   td Power supply from the AC voltage network
@@ -96,18 +104,18 @@ html(lang='en')
                   td Cosφ (cosine phi)
                   td 1
               
-              h4 Work description
+              h4#work Work description
               p Basic function of the electric generator is obtaining high efficiency of power consumption of electrical devices from a network of alternating voltage, safe wire power transmission. For achievement of a goal the device neutralizes reactive energy, to be exact accumulates and redirects it for a supply of electric devices of different applications. 
               p In this device the originating retroactive electromotive force (REF) does not return   in primary circuit of the generator, but accumulates and applies upon electrical load together with the useful electrical charge that gives the useful economic effect. Constructively and schematically it is reached by method of division of electromagnetic fields between primary and secondary resonant circuit of a device. 
               p As there is no uniform electromagnetic field (the system of the closed type) between resonant circuits, construction becomes open type system (asymmetric), and obtained energy of electromagnetic field of a secondary circuit prevails over electromagnetic energy of primary circuit. Neither ferromagnetic materials nor electrolytic capacitors of high capacity are   used in construction of the generator. Interaction of resonant circuits is carried out exclusively by air, i.e. one circuit is the transmitter of electrical charges, and another the receiver. 
-              h4 Safety
+              h4#safety Safety
               p For safety reasons, to avoid electric shock,   the energy saving electronic device generates   an output current   with a frequency of 28000 Hz, not standard 50-60 Hz (hazardous to human being), and the modified voltage in the range 250B to 500B , depending on the connected loading. Such electric frequency does not affect negatively upon an organism in general and prevents damage of the man by then electric current.
-              h4 Advantage
+              h4#advantage Advantage
               p During the experiments one more advantage and economic effect was revealed - it is a compensating Cos φ (a cosine ɸ). When calculating the electric power consumed by any electric or home device so-called complete power of the electric current performing a work in a circuit of this loading is usually considered. Different appliances of electrical energy can work in the circuits having either the active or reactive component of an electric current. Some electric devices work at the active power, such as incandescent lamps, electric stoves, electric heaters, electric furnaces, irons, etc.
               p Examples of reactive loads are electric drives of different type, vacuum cleaners, electric drills, portable electro-driven tools, etc. and other different household electronic appliances with pulsed power source. 
               p  As a main objective of the existing systems of electrical power supply is the useful delivery of the electric power from the vendor directly to a customer, the reactive component of power usually is considered as useless and harmful characteristic of a circuit.
               p Losses on a reactive component on a network are directly connected to value of electrical power factor, in other words-  the higher is  the Cosφ of a customer (tendency to 1), the less are the losses of power in the line, and power transmission to a customer will cost cheaper. Thus, the energy saving device reduces not only consumption of the active power, but also neutralizes reactive power in a circuit of alternating voltage.
-              h4 Application
+              h4#applications Application
               ul
                 li Automotive industry
                 li Heating of buildings
@@ -116,70 +124,33 @@ html(lang='en')
               p Utilization of currents of high frequency allows efficient and quick car batteries recharge. One of important indicators the automotive battery efficiency is rapid recharge ability. Today, several car makers are implementing double battery systems when one block is recharging from generator, another is being used for driving - at the time. 
               p Upon the full charge the   switching of accumulator blocks takes place. Now the charged accumulators activate the electric motor, others are loaded. The quicker is the charging mode, the further the car will drive. This energy saving power generator allows quick recharging of rechargeable batteries.
               p Regarding the use of the electric generator in the systems of heating, for this application it is necessary to make some changes to composition of alloys used as heating element in heating devices. All modern heating elements have been developed under the industrial frequency of 50 Hz. Our electric generator utilizes frequency of 28000 Hz that much more exceeds the critical technical parameters of these heaters. 
-              p Therefore, the utilization of the routine modern heaters at high frequencies is inefficient. Only the modernization of the heating elements by changing of parameters of electric heaters and their adaptation to high frequencies will give big economic effect - more than 50%- to consumption of the alternating current. 
+              p Therefore, the utilization of the routine modern heaters at high frequencies is inefficient. Only the modernization of the heating elements by changing of parameters of electric heaters and their adaptation to high frequencies will give big economic effect - more than 50%- to consumption of the alternating current.
+              .patent#patents
+                h4 Description of patents
+                ul
+                  li The Portable Electric Power Station with a High Coefficient of Efficiency
+                  li An Energy-saving Equipment as an Eliminating Factor of People and Animals by an Electric Current Strike
+                  li The Unified Transformer of Tension for a Power Supply of Electric Lamps and Radio Electronic Equipments with a High Economic Effect
+                a(href="") Download
 
-
-
                   
                   
                   
                   
                   
-      //section.project.project-two#energy
-        a(href="")
-        
-        .container.project-hero
-            .row
-              .col-md-12
-                p Investments in energy saving technologies
-                h2.serif 
-                  |Energy-saving 
-                  br
-                  |electric power generator  
-                
-            .row.partner-box
-                
-              .col-md-3
-              .col-md-6.col-xs-12
-                img(src="3/logo-green.png", alt="")
-            .row
-              .col-md-3
-              .col-md-6.col-xs-12
-                 
-                h4 GIDI INVEST AG has been developing an energy-saving generator. At the moment, there is already a unique technology and a working prototype.
-                br
-                br
-            .row.pic-grid
-              
-              .col-md-3
-              .col-md-6
-                img(src="2/e9.jpg", alt="")
-            .row
-              .col-md-3
-              .col-md-6.col-xs-12
-                
-                h5  The results of the further research are to be published and tested by the independent experts and research institutes. 
-
-                h5 It is already fair to say that our technology will give the world a new source of electricity and will reduce the negative impact on the biosphere of the Earth.
       
-      
-      section.patent
+     
+            
+
+
+
+      section.next-project(style="background: #888e69")
+        .pic(style="background-image: url(3/6.jpg)")
         .container
           .row
-            .col-md-6
-              h3 
-                |Description of patents
-              a(href="") Download
-            .col-md-6
-              ul
-                li The Portable Electric Power Station with a High Coefficient of Efficiency
-                li An Energy-saving Equipment as an Eliminating Factor of People and Animals by an Electric Current Strike
-                li The Unified Transformer of Tension for a Power Supply of Electric Lamps and Radio Electronic Equipments with a High Economic Effect
-            
-
-
-
-            
+            .col-md-6.col-xs-12
+              p Next project →
+              a(href="commune-de-maxilly-sur-leman.html") Commune de Maxilly sur Leman      
       
       
       include includes/footer

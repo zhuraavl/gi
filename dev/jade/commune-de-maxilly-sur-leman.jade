@@ -16,9 +16,24 @@ html(lang='en')
   body
     include includes/header
     main
+      section.fake-hero
+        .hero-bg
+        .bg-two(style="background:#719ce0")
+      section.new-hero
+        .hero-bg
+        .container.text-center
+          .row
+            .col-md-2
+            .col-md-8
+              h6 Investments in real estate
+              h1.serif Commune de Maxilly sur Leman
+            .col-md-3
+            .col-md-6.col-sm-6.col-xs-12
+              h5 The company has two real estate projects in the city of Maxilly-sur-Leman (France), a residential complex with 10 apartments overlooking the lake of Lac Leman.
+              img(src="3/LOGO INFINITI_COUL.png", alt="", style="width:150px; margin-top:30px")
       section.hero-picture 
         .pic(style="background-image: url(3/6.jpg)")
-      section.hero-title
+      //section.hero-title
         .container
           .row
             .col-md-12
@@ -78,7 +93,16 @@ html(lang='en')
               .img-box
                 img(src="3/a4.jpg", alt="")
       
-                  
+      
+      section.next-project(style="background: #78a4e4;color:#fff;")
+        .pic(style="background-image: url(3/hero-pic-estate-2.jpg)")
+        .container
+          .row
+            .col-md-6.col-xs-12
+              p Next project →
+              a(href="departement-de-la-haute-savoie.html" style="color:#fff;") 
+                  |Departement de la Haute — Savoie
+      
       include includes/footer
           
 
