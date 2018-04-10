@@ -17,19 +17,39 @@ html(lang='en')
     
     include includes/header
     main
-      section.hero
+      
+      section.very-new-hero
         .container
           .row
-            .col-md-6.hero-text
+            .col-md-10.col-md-offset-1.col-sm-12.col-xs-12.text-center
+              h2.serif GIDI INVEST AG is a company founded in 2016. It aims to invest in interesting projects in various fields.
+              .row
+                .col-md-6.col-md-offset-3
+                  h5 Today, the company takes an active part in the development of three areas of investment programs:
+      section.project-main-hero.text-center
+        h6 Investments in energy saving technologies
+        a.show-one(href="energy-saving-electric-power-generator.html") Energy-saving electric power generator
+        h6 Investments in real estate (construction)
+        a.show-two(href="commune-de-maxilly-sur-leman.html") Commune de Maxilly sur Leman
+        a.show-three(href="departement-de-la-haute-savoie.html") 
+          |Departement de la Haute — Savoie
+        h6 Investments in biomedicine
+        a.show-four(href="biocorrector-17.html") BK-17 Biocorrector
+        a.show-five(href="biocorrector-16.html") BK-16 Biocorrector  
+        .left-side
+          .side.one(style="background-image: url(2/e9.jpg)")
+          .side.two(style="background-image: url(3/6.jpg)")
+          .side.three(style="background-image: url(3/hero-pic-estate-2.jpg)")
+          .side.four(style="background-image: url(2/b1.jpg)")
+          .side.five(style="background-image: url(3/bk171.jpg)")
+      //section.hero
+        .container
+          .row
+            .col-md-12.hero-text
               .anim-box 
                 h2 GIDI INVEST AG is a company founded in 2016. It aims to invest in interesting projects in various fields.
                 h5 Today, the company takes an active part in the development of three areas of investment programs.
-              .left-side
-                .side.one(style="background-image: url(2/e9.jpg)")
-                .side.two(style="background-image: url(3/6.jpg)")
-                .side.three(style="background-image: url(3/hero-pic-estate-2.jpg)")
-                .side.four(style="background-image: url(2/b1.jpg)")
-                .side.five(style="background-image: url(3/bk171.jpg)")
+              
             .col-md-6.row-link
               .invest-item
                 h5

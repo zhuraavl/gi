@@ -132,6 +132,24 @@ img { width: 100%; }
 
 .logo-text { -webkit-transition: all .5s; transition: all .5s; margin-top: 10px; height: 15px; }
 
+.very-new-hero { padding-top: 50px; }
+
+.very-new-hero h2 { font-size: 55px; -webkit-transition: all 1s ease-in-out; transition: all 1s ease-in-out; opacity: 0; -webkit-transform: translateY(100%); transform: translateY(100%); }
+
+.very-new-hero h5 { -webkit-transition: all 1.1s ease-in-out; transition: all 1.1s ease-in-out; opacity: 0; -webkit-transform: translateY(100%); transform: translateY(100%); }
+
+.load .very-new-hero h2, .load .very-new-hero h5 { -webkit-transform: translateY(0%); transform: translateY(0%); opacity: 1; }
+
+.project-main-hero { padding-bottom: 200px; -webkit-transition: all 1.2s ease-in-out; transition: all 1.2s ease-in-out; opacity: 0; -webkit-transform: translateY(100%); transform: translateY(100%); }
+
+.project-main-hero h6 { margin-top: 70px; }
+
+.project-main-hero a { font-family: "EB Garamond", serif; color: #000; font-size: 36px; display: block; margin: 25px 0; }
+
+.project-main-hero a:hover { color: #ca4137; }
+
+.load .project-main-hero { -webkit-transform: translateY(0%); transform: translateY(0%); opacity: 1; }
+
 header { padding: 60px 0; width: 100%; left: 0; top: 0; z-index: 1000; border-bottom: 1px solid #000; -webkit-transition: all .6s ease-in-out; transition: all .6s ease-in-out; -webkit-transform: translateY(-100%); transform: translateY(-100%); position: relative; background: #fff; }
 
 @media (max-width: 599px) { header { padding: 50px 1em; } }
@@ -198,13 +216,11 @@ header a:hover { text-decoration: underline; }
 
 .anim-box.move { -webkit-transform: translateX(-20%); transform: translateX(-20%); opacity: 0; }
 
-.left-side { position: absolute; width: 80%; height: 80%; left: 0; right: 0; bottom: 0; top: 0; margin: auto; }
+.left-side { position: absolute; width: 80%; height: 80%; left: 0; right: 0; bottom: 0; top: 0; margin: auto; z-index: -1; opacity: .3; overflow: hidden; }
 
-.left-side .side { position: absolute; width: 100%; height: 100%; left: 0; top: 0; background-size: contain; background-repeat: no-repeat; background-position: center; opacity: 0; -webkit-transform: translateX(100%); transform: translateX(100%); -webkit-transition: all .5s ease-in-out; transition: all .5s ease-in-out; }
+.left-side .side { position: absolute; width: 100%; height: 100%; left: 0; top: 0; background-size: contain; background-repeat: no-repeat; background-position: center; opacity: 0; -webkit-transform: translateY(100%); transform: translateY(100%); -webkit-transition: all .5s ease-in-out; transition: all .5s ease-in-out; }
 
-.left-side .side.three, .left-side .side.five { width: 70%; background-size: cover; }
-
-.left-side .side.move { opacity: 1; -webkit-transform: translateX(0); transform: translateX(0); }
+.left-side .side.move { opacity: 1; -webkit-transform: translateY(0); transform: translateY(0); }
 
 .fake-hero { height: 100vh; position: relative; background: transparent; }
 
